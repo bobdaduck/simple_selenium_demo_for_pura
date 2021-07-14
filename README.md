@@ -1,6 +1,6 @@
 ## Pura Test Demo
 
-Run tests with the command line command "pytest" in the test directory. Later, other options can be added to the command, introducing parallelization, test reports, etc
+Run tests with the command line command "pytest" in the test directory. Later, other options can be added to the command, introducing parallelization, test reports, etc.
 
 ## SETUP
 Download the chromedriver version for your operating system and matching the version of google chrome installed on your computer (check chrome's "about" page) and place the downloaded file in the test directory. Chromedriver can be downloaded from: https://chromedriver.chromium.org/downloads 
