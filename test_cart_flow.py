@@ -15,11 +15,11 @@ class LoginTests(unittest.TestCase):
         self.Fragrance = Fragrance(self.driver)
         self.Checkout = Checkout(self.driver)
 
-    def test_cart_flow(self): # I would break this out into several test cases
+    def test_cart_flow(self):
         self.Home.goto()
         self.Home.get_smart_device_pre_order_btn().click()
         assert self.Cart.suggestions_contain("Pura Smart Device") == False
-        self.Cart.clear() # Todo: Investigate if using an Enum would improve this
+        self.Cart.clear()
         assert self.Cart.suggestions_contain("Pura Smart Device") == True
         self.Fragrance.subscribe() 
         cart_total_with_subscription = self.Cart.get_total()
